@@ -10,7 +10,17 @@ const useHistory = ReactRouterDOM.useHistory;
 // const { useHistory, useParams, Redirect, Switch, Prompt, Link, Route } = ReactRouterDOM;
 
 function Home() {
-    return <div>Welcome to Avocado Toast Manifesto.</div>
+    return (
+        <React.Fragment>
+            <div class="home container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1>Avocado Toast Manifesto</h1>
+                    </div>
+                </div>
+            </div>
+        </React.Fragment>
+    )
 }
 
 function App() {

@@ -1,0 +1,9 @@
+.home {
+    background-color: white; /* fallback if background image fails */
+    background-repeat: no-repeat;
+    background-image: url(https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
