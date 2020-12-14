@@ -8,3 +8,23 @@ const useParams = ReactRouterDOM.useParams;
 const useHistory = ReactRouterDOM.useHistory;
 // same as the above but using destructing syntax 
 // const { useHistory, useParams, Redirect, Switch, Prompt, Link, Route } = ReactRouterDOM;
+
+function Home() {
+    return <div>Welcome to Avocado Toast Manifesto.</div>
+}
+
+function App() {
+    return (
+        <Router>
+            <div>
+                <switch>
+                    <Route path='/'>
+                        <Home />
+                    </Route>
+                </switch>
+            </div>
+        </Router>
+    )
+}
+
+ReactDOM.render(<App />, document.getElementById('root'))
