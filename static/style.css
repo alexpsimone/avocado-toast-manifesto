@@ -1,8 +1,13 @@
+body {
+    margin: 0;
+}
+
 .home > section.container-fluid,
 .home > section.container {
   width: 100vw;
   height: 100vh;
   padding-top: 56px;
+  margin: 0;
 }
 
 .section-1 {
@@ -10,10 +15,7 @@
 }
 
 .section-2 {
-    position: relative;
-    background-color: mediumspringgreen;
-}
-
-.section-3 {
-    background: linear-gradient(#edc7ca, #bbb6ce);
+    /* position: relative; */
+    background-color:#d0d87f;
+    height: 80vh;
 }
