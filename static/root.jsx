@@ -18,22 +18,22 @@ function Manifesto(props) {
 function Home() {
     return (
         <React.Fragment>
-            <div class="home container-fluid">
-                <section class="section-1 container-fluid d-flex justify-content-center align-items-center">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col">
-                                <h1 class="display-4 mx-5">
+            <div className="home container-fluid">
+                <section className="section-1 container-fluid d-flex justify-content-center align-items-center">
+                    <div className="container-fluid">
+                        <div className="row">
+                            <div className="col">
+                                <h1 className="display-4 mx-5">
                                     Avocado Toast Manifesto
                                 </h1>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="section-2 container-fluid d-flex justify-content-center align-items-center">
-                    <div class="row">
-                        <div class="col">
-                            <button class="btn btn-primary" id="manifesto">Generate a Manifesto.</button>
+                <section className="section-2 container-fluid d-flex justify-content-center align-items-center">
+                    <div className="row">
+                        <div className="col">
+                            <button className="btn btn-primary" id="manifesto">Generate a Manifesto.</button>
                             <Manifesto manifesto=" "/>
                         </div>
                     </div>
