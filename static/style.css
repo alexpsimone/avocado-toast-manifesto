@@ -3,6 +3,33 @@ body {
     font-family: 'Nunito', 'Helvetica', sans-serif;
 }
 
+.home nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-transparent {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent);
+    font-size: 1.2em;
+    z-index: 100;
+}
+
+.nav-transparent .nav-link,
+.nav-transparent .navbar-brand, 
+.nav-transparent p {
+    color: black;
+}
+
+.nav-transparent .navbar-brand {
+    font-weight: bold;
+}
+
+.nav-transparent .navbar-brand:hover,
+.nav-transparent .nav-link:hover {
+    color: black;
+}
+
 .home > section.container-fluid,
 .home > section.container {
   width: 100vw;
@@ -12,13 +39,18 @@ body {
 }
 
 .section-1 {
-    background: no-repeat center/cover url('https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1');
+    background: no-repeat center/cover url('https://images.unsplash.com/photo-1588137378625-ba3a4169bf5b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1');
+    /* background: no-repeat center/cover url('https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1'); */
 }
 
 .section-2 {
     /* position: relative; */
     background-color:#d0d87f;
     height: 80vh;
+}
+
+.home-title {
+    font-size: 2em;
 }
 
 .manifesto-text {

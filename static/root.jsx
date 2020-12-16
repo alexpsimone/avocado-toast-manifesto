@@ -16,15 +16,41 @@ function Manifesto(props) {
     );
 }
 
+function NavBar() {
+    return (
+        <React.Fragment>
+            <nav class="navbar navbar-expand-md nav-transparent w-100">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Transparent Nav</a>
+                <div id="navbar" class="navbar-collapse collapse navbar-expand-lg">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Another One</a>
+                    </li>
+                    </ul>
+                </div>
+                <p class="my-auto">
+                    Show off your background image with a transparent navbar.
+                </p>
+                </div>
+            </nav>
+        </React.Fragment>
+    );
+}
+
 function Home() {
     return (
         <React.Fragment>
             <div className="home container-fluid">
-                <section className="section-1 container-fluid d-flex justify-content-center align-items-center">
+                <NavBar />
+                <section className="section-1 container-fluid d-flex justify-content-start align-items-start">
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col">
-                                <h1 className="display-4 mx-5">
+                                <h1 className="home-title display-4 mx-5">
                                     Avocado Toast Manifesto
                                 </h1>
                             </div>
@@ -41,8 +67,10 @@ function Home() {
                 </section>
             </div>
         </React.Fragment>
-    )
+    );
 }
+
+
 
 function App() {
     return (
