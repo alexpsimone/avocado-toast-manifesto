@@ -54,15 +54,6 @@ body {
     height: 80vh;
 }
 
-.about {
-    background: no-repeat center/cover url('https://images.unsplash.com/photo-1512203847871-1125bd2c903a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1');
-}
-
-.about-subcontent {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10%;
-}
-
 .home-title {
     font-size: 2em;
 }
@@ -87,3 +78,38 @@ body {
     border-color: black;
     color: #d0d87f;
 }
+
+.about {
+    background: no-repeat center/cover url('https://images.unsplash.com/photo-1512203847871-1125bd2c903a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1');
+}
+
+.about-subcontent {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10%;
+    padding: 4%;
+}
+
+.line-wipe {
+    position: relative;
+    text-decoration: none !important;
+    display: inline-block;
+    color: black;
+    font-weight: 600;
+}
+
+.line-wipe:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #69823b;
+    transition: 0.5s width;
+}
+
+.line-wipe:hover:after {
+    width: 100%;
+    border-bottom-color: #69823b;
+    color: #69823b
+}
+

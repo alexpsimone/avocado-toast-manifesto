@@ -57,7 +57,7 @@ function AboutGPT2() {
     return (
         <React.Fragment>
             <div className="row d-flex justify-content-around">
-                <div className="about-subcontent col-4">
+                <div className="about-subcontent col-4 ">
                     <h1>Why This Exists</h1>
                     <p>
                         Not too long ago, my roommate offered to make me some avocado toast.
@@ -76,7 +76,7 @@ function AboutGPT2() {
                         I think machine learning is really cool, and I jumped on the opportunity to find a silly use for an otherwise dangerous and powerful tool: language models.
                         Language models can help guess what word you might want to type next in your email, or maybe it can automatically write realistic-sounding tweets, or maybe,
                         just maybe, they can be used to bring new manifestos to the world about my favorite breakfast meal.
-                        GPT2 is a freely-available, very powerful language model originally developed by OpenAI. I query the [TBD] GPT2 API with some seed text copied from various
+                        GPT2 is a freely-available, very powerful language model originally developed by <a className="line-wipe" href="https://github.com/openai/gpt-2">OpenAI</a>. I query the [TBD] GPT2 API with some seed text copied from various
                         avocado toast recipe sites, and voila, manifestos appear!
                     </p>
                 </div>
@@ -84,6 +84,7 @@ function AboutGPT2() {
         </React.Fragment>
     );
 }
+
 function About() {
     return (
         <React.Fragment>
