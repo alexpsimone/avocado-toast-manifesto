@@ -25,10 +25,10 @@ function NavBar() {
                     <div id="navbar" className="navbar-collapse collapse navbar-expand-lg">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="/manifesto">Generate</a>
+                                <Link to="/manifesto" className="nav-link">Generate</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/about">About</a>
+                                <Link to="/about" className="nav-link">About</Link>
                             </li>
                         </ul>
                     </div>
@@ -53,11 +53,9 @@ function SectionManifesto() {
     );
 }
 
-function SectionLandingPhoto() {
+function About() {
     return (
-        <React.Fragment>
-                <section className="section-1 container-fluid d-flex justify-content-start align-items-start"></section>
-        </React.Fragment>
+        <div>This is the about page.</div>
     );
 }
 
@@ -65,35 +63,24 @@ function Home() {
     return (
         <React.Fragment>
             <div className="home container-fluid">
-                <NavBar />
-                <SectionLandingPhoto />
+                {/* <NavBar /> */}
+                <section className="section-1 container-fluid d-flex justify-content-start align-items-start"></section>
                 <SectionManifesto />
             </div>
         </React.Fragment>
     );
 }
 
-function About() {
-    return (
-        <React.Fragment>
-            <div>
-                <NavBar />
-            </div>
-        </React.Fragment>
-    );
-}
-
-
-
 function App() {
     return (
         <Router>
+            <NavBar />
             <div>
                 <Switch>
-                    <Route path='/'>
+                    <Route path="/">
                         <Home />
                     </Route>
-                    <Route path='/about'>
+                    <Route path="/about">
                         <About />
                     </Route>
                 </Switch>

@@ -53,6 +53,10 @@ body {
     height: 80vh;
 }
 
+.about {
+    background: no-repeat center/cover url('https://images.unsplash.com/photo-1512203847871-1125bd2c903a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1');
+}
+
 .home-title {
     font-size: 2em;
 }
