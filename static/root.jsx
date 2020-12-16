@@ -56,7 +56,25 @@ function SectionManifesto() {
 function AboutGPT2() {
     return (
         <React.Fragment>
-
+            <h1>Why This Exists</h1>
+            <p>
+                Not too long ago, my roommate offered to make me some avocado toast.
+                This seemed like a great idea at first, because what self-respecting Millenial doesn't love avocado toast?
+                But then...things started to take a dark turn.
+                This well-intentioned friend grabbed a tub of goat cheese out of the fridge, and to my horror, started sprinkling the stuff on my toast.
+                I love goat cheese. I love avocado toast. I do not love them together.
+                In response to my complaints, my roommate asked with equal parts contempt and amusement:
+                "What, is this your avocado toast manifesto?"
+                Apparently. It was.
+            </p>
+            <h1>Using GPT2</h1>
+            <p>
+                I think machine learning is really cool, and I jumped on the opportunity to find a silly use for an otherwise dangerous and powerful tool: language models.
+                Language models can help guess what word you might want to type next in your email, or maybe it can automatically write realistic-sounding tweets, or maybe,
+                just maybe, they can be used to bring new manifestos to the world about my favorite breakfast meal.
+                GPT2 is a freely-available, very powerful language model originally developed by OpenAI. I query the [TBD] GPT2 API with some seed text copied from various
+                avocado toast recipe sites, and voila, manifestos appear!
+            </p>
         </React.Fragment>
     );
 }
@@ -64,8 +82,9 @@ function About() {
     return (
         <React.Fragment>
             <div className="home container-fluid">
-                <section className="about container-fluid d-flex justify-content-start align-items-start"></section>
-                <AboutGPT2 />
+                <section className="about container-fluid d-flex justify-content-start align-items-start">
+                    <AboutGPT2 />
+                </section>
             </div>
         </React.Fragment>
     );
