@@ -53,11 +53,9 @@ function SectionManifesto() {
     );
 }
 
-function Home() {
+function SectionLandingPhoto() {
     return (
         <React.Fragment>
-            <div className="home container-fluid">
-                <NavBar />
                 <section className="section-1 container-fluid d-flex justify-content-start align-items-start">
                     <div className="container-fluid">
                         <div className="row">
@@ -69,6 +67,16 @@ function Home() {
                         </div>
                     </div>
                 </section>
+        </React.Fragment>
+    );
+}
+
+function Home() {
+    return (
+        <React.Fragment>
+            <div className="home container-fluid">
+                <NavBar />
+                <SectionLandingPhoto />
                 <SectionManifesto />
             </div>
         </React.Fragment>
