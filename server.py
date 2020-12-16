@@ -5,6 +5,7 @@ import os
 app = Flask(__name__)
 
 @app.route("/")
+@app.route("/about")
 def root():
     return render_template('root.html')
 

@@ -77,11 +77,11 @@ function App() {
             <NavBar />
             <div>
                 <Switch>
-                    <Route path="/">
-                        <Home />
-                    </Route>
                     <Route path="/about">
                         <About />
+                    </Route>
+                    <Route path="/">
+                        <Home />
                     </Route>
                 </Switch>
             </div>
@@ -89,4 +89,4 @@ function App() {
     );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'));
