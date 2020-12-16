@@ -28,7 +28,14 @@ body {
 }
 
 .btn-primary {
+    margin: 20px;
     background-color: #dbe1e1;
-    color: black;
     border-color: #dbe1e1;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color:black;
+    border-color: black;
+    color: #d0d87f;
 }
