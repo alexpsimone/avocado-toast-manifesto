@@ -21,20 +21,17 @@ function NavBar() {
         <React.Fragment>
             <nav class="navbar navbar-expand-md nav-transparent w-100">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="#">Transparent Nav</a>
-                <div id="navbar" class="navbar-collapse collapse navbar-expand-lg">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Another One</a>
-                    </li>
-                    </ul>
-                </div>
-                <p class="my-auto">
-                    Show off your background image with a transparent navbar.
-                </p>
+                    <a class="navbar-brand" href="/">Avocado Toast Manifesto</a>
+                    <div id="navbar" class="navbar-collapse collapse navbar-expand-lg">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/manifesto">Generate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </React.Fragment>
@@ -51,7 +48,7 @@ function Home() {
                         <div className="row">
                             <div className="col">
                                 <h1 className="home-title display-4 mx-5">
-                                    Avocado Toast Manifesto
+                                    
                                 </h1>
                             </div>
                         </div>
