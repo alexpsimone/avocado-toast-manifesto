@@ -38,6 +38,21 @@ function NavBar() {
     );
 }
 
+function SectionManifesto() {
+    return (
+        <React.Fragment>
+                <section className="section-2 container-fluid d-flex justify-content-center align-items-center">
+                    <div className="row align-items-center justify-content-center">
+                        <div className="col-md-6 justify-content-center">
+                            <Manifesto manifesto="Nobody should ever put goat cheese, or really any cheese, on avocado toast. There's already so much fat content with the avocado; the flavors would get lost in each other. And avocado toast should always employ generous use of salt. No exceptions."/>
+                            <button className="btn btn-primary btn-lg" id="manifesto">Generate a Manifesto <i class="fas fa-bread-slice"></i></button>
+                        </div>
+                    </div>
+                </section>
+        </React.Fragment>
+    );
+}
+
 function Home() {
     return (
         <React.Fragment>
@@ -54,14 +69,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="section-2 container-fluid d-flex justify-content-center align-items-center">
-                    <div className="row align-items-center justify-content-center">
-                        <div className="col-md-6 justify-content-center">
-                            <Manifesto manifesto="Nobody should ever put goat cheese, or really any cheese, on avocado toast. There's already so much fat content with the avocado; the flavors would get lost in each other. And avocado toast should always employ generous use of salt. No exceptions."/>
-                            <button className="btn btn-primary btn-lg" id="manifesto">Generate a Manifesto <i class="fas fa-bread-slice"></i></button>
-                        </div>
-                    </div>
-                </section>
+                <SectionManifesto />
             </div>
         </React.Fragment>
     );
