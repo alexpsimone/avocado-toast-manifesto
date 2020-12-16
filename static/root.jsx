@@ -53,17 +53,28 @@ function SectionManifesto() {
     );
 }
 
+function AboutGPT2() {
+    return (
+        <React.Fragment>
+
+        </React.Fragment>
+    );
+}
 function About() {
     return (
-        <div>This is the about page.</div>
+        <React.Fragment>
+            <div className="home container-fluid">
+                <section className="about container-fluid d-flex justify-content-start align-items-start"></section>
+                <AboutGPT2 />
+            </div>
+        </React.Fragment>
     );
 }
 
 function Home() {
     return (
         <React.Fragment>
-            <div className="home container-fluid">
-                {/* <NavBar /> */}
+            <div className="about container-fluid">
                 <section className="section-1 container-fluid d-flex justify-content-start align-items-start"></section>
                 <SectionManifesto />
             </div>

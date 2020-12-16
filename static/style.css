@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
 }
 
-.home nav {
+.nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,6 +31,8 @@ body {
     color: #69823b;
 }
 
+.about > section.container-fluid,
+.about > section.container,
 .home > section.container-fluid,
 .home > section.container {
   width: 100vw;
@@ -48,7 +50,6 @@ body {
 }
 
 .section-2 {
-    /* position: relative; */
     background-color:#d0d87f;
     height: 80vh;
 }
