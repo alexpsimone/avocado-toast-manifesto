@@ -31,7 +31,9 @@ body {
     margin: 20px;
     background-color: #dbe1e1;
     border-color: #dbe1e1;
-    color: black;
+    color:black;
+    border-radius: 0;
+    box-shadow: 2px 2px 0 #69823b;
 }
 
 .btn-primary:hover {
