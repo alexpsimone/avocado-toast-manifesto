@@ -19,16 +19,16 @@ function Manifesto(props) {
 function NavBar() {
     return (
         <React.Fragment>
-            <nav class="navbar navbar-expand-md nav-transparent w-100">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/"><img className="logo navbar-brand" src='https://www.freelogodesign.org/file/app/client/thumb/13ac783b-60c3-4149-8837-df59c19139a4_200x200.png?1608095327655'></img>Avocado Toast Manifesto</a>
-                    <div id="navbar" class="navbar-collapse collapse navbar-expand-lg">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/manifesto">Generate</a>
+            <nav className="navbar navbar-expand-md nav-transparent w-100">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="/"><img className="logo navbar-brand" src='https://www.freelogodesign.org/file/app/client/thumb/13ac783b-60c3-4149-8837-df59c19139a4_200x200.png?1608095327655'></img>Avocado Toast Manifesto</a>
+                    <div id="navbar" className="navbar-collapse collapse navbar-expand-lg">
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item">
+                                <a className="nav-link" href="/manifesto">Generate</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/about">About</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/about">About</a>
                             </li>
                         </ul>
                     </div>
@@ -45,7 +45,7 @@ function SectionManifesto() {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-md-6 justify-content-center">
                             <Manifesto manifesto="Nobody should ever put goat cheese, or really any cheese, on avocado toast. There's already so much fat content with the avocado; the flavors would get lost in each other. And avocado toast should always employ generous use of salt. No exceptions."/>
-                            <button className="btn btn-primary btn-lg" id="manifesto">Generate a Manifesto <i class="fas fa-bread-slice"></i></button>
+                            <button className="btn btn-primary btn-lg" id="manifesto">Generate a Manifesto <i className="fas fa-bread-slice"></i></button>
                         </div>
                     </div>
                 </section>
@@ -56,17 +56,7 @@ function SectionManifesto() {
 function SectionLandingPhoto() {
     return (
         <React.Fragment>
-                <section className="section-1 container-fluid d-flex justify-content-start align-items-start">
-                    <div className="container-fluid">
-                        <div className="row">
-                            <div className="col">
-                                <h1 className="home-title display-4 mx-5">
-                                    
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <section className="section-1 container-fluid d-flex justify-content-start align-items-start"></section>
         </React.Fragment>
     );
 }
@@ -83,20 +73,33 @@ function Home() {
     );
 }
 
+function About() {
+    return (
+        <React.Fragment>
+            <div>
+                <NavBar />
+            </div>
+        </React.Fragment>
+    );
+}
+
 
 
 function App() {
     return (
         <Router>
             <div>
-                <switch>
+                <Switch>
                     <Route path='/'>
                         <Home />
                     </Route>
-                </switch>
+                    <Route path='/about'>
+                        <About />
+                    </Route>
+                </Switch>
             </div>
         </Router>
-    )
+    );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
