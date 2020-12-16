@@ -19,3 +19,9 @@ body {
     background-color:#d0d87f;
     height: 80vh;
 }
+
+.btn-primary {
+    background-color: #dbe1e1;
+    color: black;
+    border-color: #dbe1e1;
+}
