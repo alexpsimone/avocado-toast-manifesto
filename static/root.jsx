@@ -21,15 +21,15 @@ function NavBar() {
         <React.Fragment>
             <nav class="navbar navbar-expand-md nav-transparent w-100">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/">Avocado Toast Manifesto</a>
+                    <a class="navbar-brand" href="/"><img className="logo navbar-brand" src='https://www.freelogodesign.org/file/app/client/thumb/13ac783b-60c3-4149-8837-df59c19139a4_200x200.png?1608095327655'></img>Avocado Toast Manifesto</a>
                     <div id="navbar" class="navbar-collapse collapse navbar-expand-lg">
-                        <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/manifesto">Generate</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/manifesto">Generate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

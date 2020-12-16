@@ -28,7 +28,7 @@ body {
 
 .nav-transparent .navbar-brand:hover,
 .nav-transparent .nav-link:hover {
-    color: black;
+    color: #69823b;
 }
 
 .home > section.container-fluid,
@@ -39,6 +39,9 @@ body {
   margin: 0;
 }
 
+.logo {
+    height: 2em;
+}
 .section-1 {
     background: no-repeat center/cover url('https://images.unsplash.com/photo-1588137378625-ba3a4169bf5b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1');
     /* background: no-repeat center/cover url('https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1'); */
