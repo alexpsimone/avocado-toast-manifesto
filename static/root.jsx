@@ -12,7 +12,7 @@ const useHistory = ReactRouterDOM.useHistory;
 function Manifesto(props) {
 
     return (
-            <p>"{props.manifesto}"</p>
+            <p className="manifesto-text">"{props.manifesto}"</p>
     );
 }
 

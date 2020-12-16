@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Nunito', 'Helvetica', sans-serif;
 }
 
 .home > section.container-fluid,
@@ -18,6 +19,12 @@ body {
     /* position: relative; */
     background-color:#d0d87f;
     height: 80vh;
+}
+
+.manifesto-text {
+
+    font: italic 2.7em 'Nunito';
+    font-weight: 550;
 }
 
 .btn-primary {
