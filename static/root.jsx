@@ -19,7 +19,7 @@ function Manifesto(props) {
 function NavBar() {
     return (
         <React.Fragment>
-            <nav className="navbar navbar-expand-md nav-transparent w-100">
+            <nav id="navbarspecial" className="navbar navbar-expand-md nav-transparent w-100">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/"><img className="logo navbar-brand" src='https://www.freelogodesign.org/file/app/client/thumb/13ac783b-60c3-4149-8837-df59c19139a4_200x200.png?1608095327655'></img>Avocado Toast Manifesto</a>
                     <div id="navbar" className="navbar-collapse collapse navbar-expand-lg">
@@ -57,7 +57,7 @@ function AboutGPT2() {
     return (
         <React.Fragment>
             <div className="row d-flex justify-content-around">
-                <div className="about-subcontent col-4 ">
+                <div className="about-subcontent text-center col-4 ">
                     <h1>Why This Exists</h1>
                     <p>
                         Not too long ago, my roommate offered to make me some avocado toast.
@@ -70,7 +70,7 @@ function AboutGPT2() {
                         Apparently. It was.
                     </p>
                 </div>
-                <div className="about-subcontent col-4">
+                <div className="about-subcontent text-center col-4">
                     <h1>Using GPT2</h1>
                     <p>
                         I think machine learning is really cool, and I jumped on the opportunity to find a silly use for an otherwise dangerous and powerful tool: language models.
@@ -88,7 +88,8 @@ function AboutGPT2() {
 function About() {
     return (
         <React.Fragment>
-            <div className="home container-fluid">
+            <div className="about container-fluid">
+                <NavBar />
                 <section className="about container-fluid d-flex justify-content-start align-items-start">
                     <AboutGPT2 />
                 </section>
@@ -100,8 +101,10 @@ function About() {
 function Home() {
     return (
         <React.Fragment>
-            <div className="about container-fluid">
-                <section className="section-1 container-fluid d-flex justify-content-start align-items-start"></section>
+            <div className="home container-fluid">
+                <section className="section-1 container-fluid d-flex justify-content-start align-items-start">
+                    <NavBar />
+                </section>
                 <SectionManifesto />
             </div>
         </React.Fragment>
@@ -110,20 +113,17 @@ function Home() {
 
 function App() {
     return (
-        <Router>
-            <NavBar />
-            <div>
-                <Switch>
-                    <Route path="/about">
-                        <About />
-                    </Route>
-                    <Route path="/">
-                        <Home />
-                    </Route>
-                </Switch>
-            </div>
-        </Router>
+        <React.Fragment>
+            <Switch>
+                <Route path="/about">
+                    <About />
+                </Route>
+                <Route path="/">
+                    <Home />
+                </Route>
+            </Switch>
+        </React.Fragment>
     );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Router><App /></Router>, document.getElementById('root'));
