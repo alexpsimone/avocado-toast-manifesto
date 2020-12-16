@@ -10,8 +10,9 @@ const useHistory = ReactRouterDOM.useHistory;
 // const { useHistory, useParams, Redirect, Switch, Prompt, Link, Route } = ReactRouterDOM;
 
 function Manifesto(props) {
+
     return (
-        <p> ~*~*~ {props.manifesto} ~*~*~ </p>
+         <p>"{props.manifesto}"</p>
     );
 }
 
@@ -32,9 +33,9 @@ function Home() {
                 </section>
                 <section className="section-2 container-fluid d-flex justify-content-center align-items-center">
                     <div className="row">
-                        <div className="col">
+                        <div className="col-6">
+                            <Manifesto manifesto="Nobody should ever put goat cheese, or really any cheese, on avocado toast. There's already so much fat content with the avocado; the flavors would get lost in each other. And avocado toast should always employ generous use of salt. No exceptions."/>
                             <button className="btn btn-primary" id="manifesto">Generate a Manifesto.</button>
-                            <Manifesto manifesto=" "/>
                         </div>
                     </div>
                 </section>
