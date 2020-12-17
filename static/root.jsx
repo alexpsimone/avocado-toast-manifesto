@@ -31,7 +31,6 @@ function NavBar() {
     );
 }
 
-
 function Manifesto() {
 
     const [manifestoText, setManifestoText] = React.useState("Nobody should ever put goat cheese, or really any cheese, on avocado toast. There's already so much fat content with the avocado; the flavors would get lost in each other. And avocado toast should always employ generous use of salt. No exceptions.")
