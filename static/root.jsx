@@ -56,10 +56,10 @@ function SectionManifesto() {
 function AboutGPT2() {
     return (
         <React.Fragment>
-            <div className="row d-flex justify-content-around">
+            <div className="row d-flex justify-content-around align-items-center">
                 <div className="about-subcontent text-center col-4 ">
-                    <h1>Why This Exists</h1>
-                    <p>
+                    <h1 className="about-header">Why This Exists</h1>
+                    <p className="about-text">
                         Not too long ago, my roommate offered to make me some avocado toast.
                         This seemed like a great idea at first, because what self-respecting Millenial doesn't love avocado toast?
                         But then...things started to take a dark turn.
@@ -71,9 +71,9 @@ function AboutGPT2() {
                     </p>
                 </div>
                 <div className="about-subcontent text-center col-4">
-                    <h1>Using GPT2</h1>
-                    <p>
-                        I think machine learning is really cool, and I jumped on the opportunity to find a silly use for an otherwise dangerous and powerful tool: language models.
+                    <h1 className="about-header">Using GPT2</h1>
+                    <p className="about-text">
+                        I think machine learning is really cool, and I jumped on the opportunity to find a silly use for language models.
                         Language models can help guess what word you might want to type next in your email, or maybe it can automatically write realistic-sounding tweets, or maybe,
                         just maybe, they can be used to bring new manifestos to the world about my favorite breakfast meal.
                         GPT2 is a freely-available, very powerful language model originally developed by <a className="line-wipe" href="https://github.com/openai/gpt-2">OpenAI</a>. I query the [TBD] GPT2 API with some seed text copied from various
@@ -90,7 +90,7 @@ function About() {
         <React.Fragment>
             <div className="about container-fluid">
                 <NavBar />
-                <section className="about container-fluid d-flex justify-content-start align-items-start">
+                <section className="about container-fluid d-flex justify-content-center align-items-center">
                     <AboutGPT2 />
                 </section>
             </div>
