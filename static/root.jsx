@@ -9,13 +9,6 @@ const useHistory = ReactRouterDOM.useHistory;
 // same as the above but using destructing syntax 
 // const { useHistory, useParams, Redirect, Switch, Prompt, Link, Route } = ReactRouterDOM;
 
-function Manifesto(props) {
-
-    return (
-            <p className="manifesto-text">"{props.manifesto}"</p>
-    );
-}
-
 function NavBar() {
     return (
         <React.Fragment>
@@ -38,16 +31,24 @@ function NavBar() {
     );
 }
 
-function ManifestoButton() {
 
+function Manifesto() {
+
+    const [manifestoText, setManifestoText] = React.useState("Nobody should ever put goat cheese, or really any cheese, on avocado toast. There's already so much fat content with the avocado; the flavors would get lost in each other. And avocado toast should always employ generous use of salt. No exceptions.")
+    
     function generateManifesto() {
         alert('You just handled an event!');
+        const newText = manifestoText + 'THIS IS DIFFERENT TEXT!';
+        setManifestoText(newText);
     }
 
     return (
-        <button onClick={generateManifesto} className="btn btn-primary btn-lg" id="manifesto">
-            Generate a Manifesto  <i className="fas fa-bread-slice"></i>
-        </button>
+        <React.Fragment>
+            <p className="manifesto-text">"{manifestoText}"</p>
+            <button onClick={generateManifesto} className="btn btn-primary btn-lg" id="manifesto">
+                Generate a Manifesto  <i className="fas fa-bread-slice"></i>
+            </button>
+        </React.Fragment>
     );
 }
 
@@ -58,7 +59,6 @@ function SectionManifesto() {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-md-6 justify-content-center">
                             <Manifesto manifesto="Nobody should ever put goat cheese, or really any cheese, on avocado toast. There's already so much fat content with the avocado; the flavors would get lost in each other. And avocado toast should always employ generous use of salt. No exceptions."/>
-                            <ManifestoButton />
                         </div>
                     </div>
                 </section>
