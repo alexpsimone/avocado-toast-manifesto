@@ -39,8 +39,13 @@ function NavBar() {
 }
 
 function ManifestoButton() {
+
+    function generateManifesto() {
+        alert('You just handled an event!');
+    }
+
     return (
-        <button className="btn btn-primary btn-lg" id="manifesto">
+        <button onClick={generateManifesto} className="btn btn-primary btn-lg" id="manifesto">
             Generate a Manifesto  <i className="fas fa-bread-slice"></i>
         </button>
     );
