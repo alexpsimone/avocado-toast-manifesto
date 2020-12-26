@@ -1,10 +1,10 @@
-# Avocado Toast Manifesto
+# :avocado: Avocado Toast Manifesto
 
 A silly webapp that I'm using to sharpen my React and CSS skills.<br><br>
 Users can read the original manifesto on the home page, or click a button to generate a new one.<br><br>
 Various text generation techniques will be implemented to generate new and modified manifesto text.
 
-### Technologies required
+### :avocado: Technologies required
 
 - Python
 - Flask
