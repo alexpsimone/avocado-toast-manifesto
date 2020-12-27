@@ -29,9 +29,9 @@ function readText () {
             }
         };
 
-        console.log(chains);
     });
 
 };
 
-readText();
+const chains = readText();
+console.log(chains);
