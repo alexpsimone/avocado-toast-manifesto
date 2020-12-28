@@ -9,6 +9,8 @@ const useHistory = ReactRouterDOM.useHistory;
 // same as the above but using destructing syntax 
 // const { useHistory, useParams, Redirect, Switch, Prompt, Link, Route } = ReactRouterDOM;
 
+// import { writeManifesto } from './markov.js';
+
 function NavBar() {
     return (
         <React.Fragment>
@@ -38,6 +40,7 @@ function Manifesto() {
     function generateManifesto() {
         alert('You just handled an event!');
         const newText = manifestoText + 'THIS IS DIFFERENT TEXT!';
+        // const newText = writeManifesto();
         setManifestoText(newText);
     }
 
