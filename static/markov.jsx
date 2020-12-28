@@ -52,30 +52,33 @@ function randomNextKey(map, word) {
     };
 }
 
-// Open the seed text file and make a map of words and next words they can chain with.
-const fs = require('fs');
-const seedText = fs.readFileSync('seed_text.txt', 'utf-8');
-const chains = makeChains(seedText);
+function  writeManifesto() {
 
-let lastWord = randomStartingWord(chains);  // Start by randomly selecting a word to start with.
-let manifestoArray = [lastWord];                 // Initialize an array that will contain all the words in the chain.
-let sentenceCount = 0;                      // Initialize a sentence counter (we'll stop when 4 sentences are written).
+    // Open the seed text file and make a map of words and next words they can chain with.
+    const fs = require('fs');
+    const seedText = fs.readFileSync('seed_text.txt', 'utf-8');
+    const chains = makeChains(seedText);
 
-// Push chains of words to the manifesto array, incrementing the sentence counter when a period is encountered.
-// Stop pushing words to the array when 4 sentences are written.
-while(sentenceCount < 4) {
+    let lastWord = randomStartingWord(chains);  // Start by randomly selecting a word to start with.
+    let manifestoArray = [lastWord];                 // Initialize an array that will contain all the words in the chain.
+    let sentenceCount = 0;                      // Initialize a sentence counter (we'll stop when 4 sentences are written).
 
-   let nextWord = randomNextKey(chains, lastWord);
-   manifestoArray.push(nextWord);
+    // Push chains of words to the manifesto array, incrementing the sentence counter when a period is encountered.
+    // Stop pushing words to the array when 4 sentences are written.
+    while(sentenceCount < 4) {
 
-   if (nextWord.slice(-1) === ".") {
-        sentenceCount += 1;
-   };
+    let nextWord = randomNextKey(chains, lastWord);
+    manifestoArray.push(nextWord);
 
-   lastWord = nextWord;
+    if (nextWord.slice(-1) === ".") {
+            sentenceCount += 1;
+    };
+
+    lastWord = nextWord;
+
+    }
+
+    // connect all words in the manifesto to create a sentence.
+    return manifestoArray.join(" ");
 
 }
-
-// connect all words in the manifesto to create a sentence.
-const fullManifesto = manifestoArray.join(" ");
-console.log(fullManifesto);
