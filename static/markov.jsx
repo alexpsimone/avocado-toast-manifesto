@@ -30,12 +30,33 @@ function randomStartingWord(map) {
     const wordsSize = words.length;
     const randomNum = Math.random();
 
-    return words[Math.floor(wordsSize * randomNum)];
+    return words[Math.floor(wordsSize * randomNum)][0];
 
+}
+
+function randomNextKey(map, word) {
+
+    if (map.has(word)) {
+
+        const valuesArray = map.get(word);
+
+        if (valuesArray.length === 1) {
+            return map.get(word)[0];
+        } else {
+            const wordsSize = valuesArray.length;
+            const randomNum = Math.random();
+            return valuesArray[Math.floor(wordsSize * randomNum)];
+        }; 
+    } else {
+        return 'avocado';
+    };
 }
 
 const fs = require('fs');
 const seedText = fs.readFileSync('seed_text.txt', 'utf-8');
 const chains = makeChains(seedText);
 
-console.log(randomStartingWord(chains));
+const firstWord = randomStartingWord(chains);
+console.log(firstWord);
+const nextWord = randomNextKey(chains, firstWord);
+console.log(nextWord);
